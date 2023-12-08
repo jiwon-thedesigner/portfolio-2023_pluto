@@ -6,10 +6,81 @@
     <title>플루토 기타 리페어샵</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./img/pluto_ci.png" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <section class="detail_img">
       <img src="./img/pluto_detail-page.png" alt="디테일 페이지" />
     </section>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide 01">
+          <img src="./img/플루토_회원가입.png" alt="" />
+        </div>
+        <div class="swiper-slide 02">
+          <img src="./img/플루토_로그인01.png" alt="" />
+        </div>
+        <div class="swiper-slide 03">
+          <img src="./img/플루토_로그인02.png" alt="" />
+        </div>
+        <div class="swiper-slide 04">
+          <img src="./img/플루토_메인.png" alt="" />
+        </div>
+        <div class="swiper-slide 05">
+          <img src="./img/플루토_예약현황01.png" alt="" />
+        </div>
+        <div class="swiper-slide 06">
+          <img src="./img/플루토_예약현황02.png" alt="" />
+        </div>
+        <div class="swiper-slide 07">
+          <img src="./img/플루토_프로필설정01.png" alt="" />
+        </div>
+        <div class="swiper-slide 08">
+          <img src="./img/플루토_프로필설정02.png" alt="" />
+        </div>
+        <div class="swiper-slide 09">
+          <img src="./img/플루토_악기설정.png" alt="" />
+        </div>
+        <div class="swiper-slide 10">
+          <img src="./img/플루토_의뢰등록.png" alt="" />
+        </div>
+        <div class="swiper-slide 11">
+          <img src="./img/플루토_알림.png" alt="" />
+        </div>
+        <div class="swiper-slide 12">
+          <img src="./img/플루토_오시는길.png" alt="" />
+        </div>
+        <div class="swiper-slide 13">
+          <img src="./img/플루토_예약상세.png" alt="" />
+        </div>
+        <div class="swiper-slide 14">
+          <img src="./img/플루토_문의하기.png" alt="" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        // 슬라이드 사이 여백
+        slidesPerView: "auto",
+        // 한 슬라이드에 보여줄 갯수
+        centeredSlides: true,
+        //센터모드
+        autoplay: {
+          //자동슬라이드 (false-비활성화)
+          delay: 2000, // 시간 설정
+          disableOnInteraction: true,
+          // false-스와이프 후 자동 재생
+        },
+        loop: true,
+        // 슬라이드 반복 여부
+        loopAdditionalSlides: 1,
+        // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
+      });
+    </script>
   </body>
 </html>

@@ -29,11 +29,18 @@ a {
   text-decoration: none;
   color: inherit;
 }
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
 
 /* container */
 .container {
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
   position: relative;
   background-color: #231f20;
 }
@@ -57,6 +64,29 @@ a {
   /*   원본 페이지 : https://www.rawlab.co */
 }
 
-img {
+.detail_img > img {
   width: 100vw;
+}
+
+.swiper {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 40px;
+}
+.swiper-wrapper .swiper-slide {
+  margin-right: 20px;
+  margin-bottom: 100px;
+}
+.swiper-wrapper .swiper-slide > img {
+  width: 300px;
+  border: 8px solid #000;
+  border-radius: 40px;
+  object-fit: cover;
+  box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: content-box;
 }
